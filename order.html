@@ -6,28 +6,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-kjhi/1g08oKRUlOgz7tWgAM8Hzv7XHml+BjQ/D1VWw8t78vQQWyN/zZyaLzsP7Wx/J8Qv1X3Puq/4gg4VWJPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Hillwood Cottage Heritage</a>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hillwood Cottage Heritage</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="order.html">Order</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
+    
   </nav>
 
   <div class="container">
@@ -52,12 +54,6 @@
             <br>
             <button class="btn btn-success" onclick="addToCart()">Add to Cart</button>
         </div>
-        <div class="col-md-6">
-            <h3>Cart</h3>
-            <ul id="cart"></ul>
-        </div>
-    </div>
-  </div>
 
   <footer class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container-fluid">
@@ -69,8 +65,16 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Products</a></li>
         <li class="active"><a href="#">Contact Us</a></li>
+        <li>
+          <div id="cart">
+            <i class="fa-duotone fa-cart-shopping"></i>
+            <ul id="cart-items"></ul>
+            <p>Shopping Cart: <span id="cart-total"></span></p> <!-- fix this -->
+          </div>
+        </li>
       </ul>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
