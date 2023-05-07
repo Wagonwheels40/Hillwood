@@ -10,8 +10,43 @@ const stockItems = [
         imgSrc: "path/to/image2.jpg"
     },
     {
-        name: "Gardening Gloves",
+        name: "Fruit Tree (Olive)",
         price: 5,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Shade Tree (Oak)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Shade Tree (Maple)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Evergreen Tree (Pine)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Evergreen Tree (Fir)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Ornamental Tree (Magnolia)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Flowering Tree (Cherry)",
+        price: 25,
+        imgSrc: "path/to/image3.jpg"
+    },
+    {
+        name: "Conifers Tree (Juniper)",
+        price: 25,
         imgSrc: "path/to/image3.jpg"
     },
 ];
@@ -42,7 +77,7 @@ const stockItems = [
     }
 
     // Loop through stock items and generate HTML for each item
-    const stockContainer = document.getElementById("stock-container");
+    const stockContainer = document.getElementById("trees");
     for (let item of stockItems) {
         const itemHTML = generateStockItemHTML(item);
         stockContainer.insertAdjacentHTML("beforeend", itemHTML);
