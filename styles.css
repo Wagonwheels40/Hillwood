@@ -110,7 +110,7 @@
       color: white;
     }
 
-    #trees, #soil {
+    #trees, #soil, #tools {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
@@ -127,4 +127,8 @@
     .row:nth-child(3n+1) {
       grid-column-start: 1;
       grid-column-end: span 3;
+    }
+
+    #cart {
+      color: white;
     }
