@@ -1,4 +1,4 @@
-    html {
+html {
       max-width: 1170px;
       margin: 0 auto;
     }
@@ -23,11 +23,18 @@
       font-weight: bold;
       color: black;
     }
+
+    #shopping-cart {
+      height: 30px;
+      color: white;
+      display: inline-flex;
+    }
     
     /* Style the "Learn More" buttons */
     .btn-primary {
       background-color: #4CAF50;
       border-color: #4CAF50;
+      margin-top: 5px;
     }
     
     .btn-primary:hover {
@@ -99,7 +106,7 @@
 
     #paragraph {
       padding-top: 15px;
-      max-width: 60%;
+      max-width: 90%;
       text-align: left;
       margin: 0 auto;
     }
@@ -133,5 +140,18 @@
 
     #cart {
       color: white;
-      margin-left: 500%;
+      margin-left: 230%;
+      display: inline-flex;
+      text-align: 50%;
+    }
+
+    .cart-image {
+      margin-right: 10px;
+    }
+
+    #shopping-cart {
+      padding-right: 10px;
+      padding-top: 5px;
+      height: 40px;
+      transform: scaleX(-1)
     }
