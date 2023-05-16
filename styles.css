@@ -1,4 +1,4 @@
-html {
+    html {
       max-width: 1170px;
       margin: 0 auto;
     }
@@ -154,4 +154,12 @@ html {
       padding-top: 5px;
       height: 40px;
       transform: scaleX(-1)
+    }
+
+    .active {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #000;
+      background-color: #cccccc;
     }
