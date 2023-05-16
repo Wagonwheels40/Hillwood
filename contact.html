@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Woodbridge Fruit Trees - Contact Us</title>
+  <title>Woodbridge Fruit Trees</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-WW0UyTNGD9auhT6xMTrWzC8Rw25ZgDYfZbfcbJv1dHfd1SK/2C/9cPjxvZO8WmPwvxzCjr6mcsU6jA8LwwnD6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Hillwood Cottage Heritage</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Order</a></li>
-          <li class="active"><a href="contact.html">Contact Us</a></li>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
+            <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
+            <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
+            <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
+            <li>
+              <div id="cart">
+                <ul id="cart-items"></ul>
+                <div class="cart-image">
+                  <img src="shopping-cart.svg" id="shopping-cart">
+                </div>
+                <p>Shopping Cart: </p> <!-- fix this -->
+              </div>
+          </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
