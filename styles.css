@@ -1,3 +1,10 @@
+  @font-face {
+    font-family: 'Acumin-Variable';
+    src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
+  }
+
+  /* Still doesn't work */
+
     html {
       max-width: 1170px;
       margin: 0 auto;
@@ -5,7 +12,7 @@
     
     /* Set the default font family */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Acumin-Variable';
       padding-bottom: 100px;
       overflow-x: hidden;
     }
@@ -14,14 +21,17 @@
     .jumbotron {
       background-image: url("/banner.jpg");
       background-size: cover;
-      color: black;
+      color: rgb(17, 15, 15);
     }
     
     /* Style the heading in the jumbotron */
     .jumbotron h1 {
       font-size: 4rem;
       font-weight: bold;
-      color: black;
+      color: rgb(0, 0, 0);
+      background-color: rgba(3, 95, 34, 0.6);
+      width: 72%;
+      height: 25%;
     }
 
     #shopping-cart {
@@ -150,10 +160,9 @@
     }
 
     #shopping-cart {
-      padding-right: 10px;
+      padding-right: 0px;
       padding-top: 5px;
       height: 40px;
-      transform: scaleX(-1)
     }
 
     .active {
