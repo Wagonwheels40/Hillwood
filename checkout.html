@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Woodbridge Fruit Trees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-WW0UyTNGD9auhT6xMTrWzC8Rw25ZgDYfZbfcbJv1dHfd1SK/2C/9cPjxvZO8WmPwvxzCjr6mcsU6jA8LwwnD6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles-2.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
+            <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
+            <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
+            <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
+            <li>
+              <a href="cart.html" onclick="this.classList.add('active')">
+                Cart:
+                <ul id="cart-items"></ul>
+                <div class="cart-image">
+                  <img src="cart-1.png" id="shopping-cart">
+                </div>
+                <p>Shopping Cart:</p>
+              </a>
+            </li>
+            
+        </ul>
+      </div>
+    </nav>
+
+        <h1>Checkout:</h1>
+        <div class="container">
+          <div class="row">
+            <div id="checkout-items">
+                <!-- Checkout items will be generated here -->
+            </div>
+          </div>
+        </div>
+
+        <form id="checkout-form" action="/process-payment" method="POST">
+          
+          <h3>Credit Card Payment</h3>
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required>
+
+          <label for="card-expiry">Expiration Date:</label>
+          <input type="text" id="card-expiry" name="card-expiry" required>
+          
+          <label for="card-cvv">CVV:</label>
+          <input type="text" id="card-cvv" name="card-cvv" required>
+          
+          <h3>PayPal Payment</h3>
+          <p>Click the button below to pay with PayPal:</p>
+          <button type="button" onclick="redirectToPayPal()">Pay with PayPal</button>
+
+          <h3>Pay in store</h3>
+          <p>Click the button below to pay with PayPal:</p>
+          <button type="button">Add to stock</button>
+          
+          <button type="submit">Place Order</button>
+        </form>
+  <footer class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Woodbridge Fruit Trees</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="trees.js"></script>
+  <script src="checkout.js"></script>
+  <script src="payment.js"></script>
+</body>
+</html>

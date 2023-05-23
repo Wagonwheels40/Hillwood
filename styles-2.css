@@ -1,0 +1,18 @@
+#checkout-items {
+    padding: 5px;
+    display: block;
+}
+
+#checkout-items > * {
+    margin-bottom: 25px;
+}
+
+#checkout-form > * {
+    display: block;
+    width: 50%; /* Adjust the width value as needed */
+    margin-bottom: 10px;
+}
+
+button {
+    width: 15%;
+}
