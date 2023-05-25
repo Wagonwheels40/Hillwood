@@ -43,33 +43,40 @@
       </div>
     </nav>
 
-        <h1>Checkout:</h1>
-        <div class="container">
-          <div class="row">
-            <div id="checkout-items">
-                <!-- Checkout items will be generated here -->
-            </div>
+    <div class="container">
+      <div class="row">
+        <div id="checkout-items">
+          <!-- Checkout items will be generated here -->
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropdown-toggle" type="button" id="credit-card-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Credit Card <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="credit-card-dropdown">
+            <li><a href="#">Visa</a></li>
+            <li><a href="#">Mastercard</a></li>
+            <li><a href="#">American Express</a></li>
+            <li><a href="#">Discover</a></li>
+          </ul>
+    
+          <div id="card-details" style="display: none;">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+    
+            <label for="card-expiry">Expiration Date:</label>
+            <input type="text" id="card-expiry" name="card-expiry" required>
+                      
+            <label for="card-cvv">CVV:</label>
+            <input type="text" id="card-cvv" name="card-cvv" required>
           </div>
         </div>
-
+      </div>
+    </div>
+     
         <form id="checkout-form" action="/process-payment" method="POST">
-          
-          <h3>Credit Card Payment</h3>
-          <label for="card-number">Card Number:</label>
-          <input type="text" id="card-number" name="card-number" required>
-
-          <label for="card-expiry">Expiration Date:</label>
-          <input type="text" id="card-expiry" name="card-expiry" required>
-          
-          <label for="card-cvv">CVV:</label>
-          <input type="text" id="card-cvv" name="card-cvv" required>
-          
-          <h3>PayPal Payment</h3>
-          <p>Click the button below to pay with PayPal:</p>
-          <button type="button" onclick="redirectToPayPal()">Pay with PayPal</button>
-
           <h3>Pay in store</h3>
-          <p>Click the button below to pay with PayPal:</p>
+          <p>Click the button below to pay in store with cash or card:</p>
           <button type="button">Add to stock</button>
           
           <button type="submit">Place Order</button>
@@ -86,5 +93,6 @@
   <script src="trees.js"></script>
   <script src="checkout.js"></script>
   <script src="payment.js"></script>
+  <script src="dropdown.js"></script>
 </body>
 </html>
