@@ -12,39 +12,36 @@
 <body>
 
   <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
-            <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
-            <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
-            <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
-            <li>
-              <a href="checkout.html" onclick="this.classList.add('active')">
-                Cart:
-                <ul id="cart-items"></ul>
-                <div class="cart-image">
-                  <img src="cart-1.png" id="shopping-cart">
-                </div>
-                <p>Shopping Cart:</p>
-              </a>
-            </li>
-            
-        </ul>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
       </div>
-    </nav>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
+          <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
+          <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
+          <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
+          <li>
+            <div id="cart">
+              <ul id="cart-items"></ul>
+              <div class="cart-image">
+                <img src="cart-1.png" id="shopping-cart">
+              </div>
+              <p class="cart-label">Shopping Cart: </p> <!-- fix this -->
+            </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="container">
     <div class="row" id="trees">
-      <!-- Stock items will be generated here -->
     </div>
   </div>
 
