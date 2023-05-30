@@ -143,14 +143,26 @@
     }
 
     #cart {
+      right: 30px;
       color: white;
-      margin-left: 230% !important;
+      margin-left: 300% !important;
       display: inline-flex;
       text-align: 50%;
     }
 
+    #cart-items {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
     .cart-image {
       margin-right: 10px;
+    }
+
+    .cart-label {
+      margin: 0;
+      font-weight: bold;
     }
 
     #shopping-cart {
