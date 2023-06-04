@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-WW0UyTNGD9auhT6xMTrWzC8Rw25ZgDYfZbfcbJv1dHfd1SK/2C/9cPjxvZO8WmPwvxzCjr6mcsU6jA8LwwnD6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -24,16 +26,9 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
             <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
-            <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
+            <li><a href="plants.html" onclick="this.classList.add('active')">Order</a></li>
             <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
-            <li>
-              <div id="cart">
-                <ul id="cart-items"></ul>
-                <div class="cart-image">
-                  <img src="shopping-cart.svg" id="shopping-cart">
-                </div>
-                <p>Shopping Cart: </p> <!-- fix this -->
-              </div>
+            <li><a href="checkout.html" onclick="this.classList.add('active')" class="cart"><img src="cart-1.png" class="cart-logo"></a></li>
           </li>
         </ul>
       </div>
@@ -41,24 +36,8 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Welcome to Hillwood Cottage Heritage</h1>
+      <h1 class="container-title">Welcome to Hillwood Cottage Heritage</h1>
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
-    </div>
-      <div class="col-md-4">
-        <h2>Plants</h2>
-        <img src="plants.jpg" id="image">
-        <a href="#" class="btn btn-primary" role="button">Go to</a>
-      </div>
-      <div class="col-md-4">
-        <h2>Soil and fertilizers</h2>
-        <img src="soil.jpg" id="image">
-        <a href="#" class="btn btn-primary" role="button">Go to</a>
-      </div>
-      <div class="col-md-4">
-        <h2>Tools</h2>
-        <img src="tools.jpeg" id="image">
-        <a href="#" class="btn btn-primary" role="button">Go to</a>
-      </div>
     </div>
     <div id="container">
       <h4>* Our soil and fertilizers are currently limited to what's in store.  More stock will arrive in November</h4>
@@ -79,13 +58,6 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Woodbridge Fruit Trees</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
   </footer>
 
 </body>
