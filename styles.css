@@ -29,19 +29,13 @@
       height: 25%;
     }
 
-  #shopping-cart {
-      height: 30px;
-      color: white;
-      display: inline-flex;
-  }
-    
-    .btn-primary {
+  .btn-primary {
       background-color: #4CAF50;
       border-color: #4CAF50;
       margin-top: 5px;
     }
     
-    .btn-primary:hover {
+  .btn-primary:hover {
       background-color: #3e8e41;
       border-color: #3e8e41;
     }
@@ -67,6 +61,14 @@
       color: #4CAF50;
     }
     
+    .cart {
+      margin-left: 520px;
+    }
+
+    .cart-logo {
+      height: 25px;
+    }
+
     /* Style the product cards */
     .col-md-4 {
       margin-bottom: 2rem;
