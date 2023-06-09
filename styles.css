@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: 'Acumin-Variable';
     src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
   }
@@ -112,12 +112,15 @@
       padding: 5px;
     }
 
-    .container {
+    .service-container {
       display: flex;
+
     }
 
-    .gardener {
-      width: 30%;
+    .wrap {
+      float: left;
+      margin: 5px;
+      width: 40%;
     }
 
     .image-container {
@@ -126,7 +129,16 @@
     }
 
     .image {
-      width: 100%;
+      width: 200%;
+      height: auto;
+      float: left;
+      margin-right: -50px;
+      transform: translateX(-30%);
+    }
+
+    .image-container .image-wrapper {
+      overflow: hidden;
+      border-radius: 10px;
     }
 
     .services {
