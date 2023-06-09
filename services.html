@@ -6,66 +6,84 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-WW0UyTNGD9auhT6xMTrWzC8Rw25ZgDYfZbfcbJv1dHfd1SK/2C/9cPjxvZO8WmPwvxzCjr6mcsU6jA8LwwnD6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
-            <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
-            <li><a href="order.html" onclick="this.classList.add('active')">Order</a></li>
-            <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
-            <li>
-              <div id="cart">
-                <ul id="cart-items"></ul>
-                <div class="cart-image">
-                  <img src="shopping-cart.svg" id="shopping-cart">
-                </div>
-                <p>Shopping Cart: </p> <!-- fix this -->
-              </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <div class="container" id="services">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Services:</h3>
-            <h5>Garden Design:</h5>
-                <p>We provide custom garden design services to create a beautiful outdoor living space that fits your unique style and needs.</p>
-            <h5>Lawn Care:</h5>
-                <p>Our lawn care services include mowing, trimming, fertilization, and weed control to keep your lawn healthy and green.</p>
-            <h5>Landscape Installation:</h5>
-                <p>We offer landscape installation services for both residential and commercial properties, including plant installation, hardscape installation, and outdoor lighting.</p>
-            <h5>Irrigation System Installation and Maitanance:</h5>
-                <p>We design and install efficient irrigation systems to keep your landscape looking beautiful all year round. We also provide maintenance services to ensure that your irrigation system is working properly.</p>
-            <h5>Tree and Shrub Care:</h5>
-                <p>Our experts provide tree and shrub pruning, removal, and planting services to keep your landscape healthy and looking beautiful.</p>
-            <h5>Landscape Maintenace:</h5>
-                <p>We provide regular landscape maintenance services to keep your property looking its best. Our services include weed control, fertilization, pruning, and mulching.</p>
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="plants.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="checkout.html" class="cart"><img src="cart-1.png" class="cart-logo"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <footer class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Woodbridge Fruit Trees</a>
+<div class="service-container">
+  <div id="container">
+    <div class="wrap">
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img class="image" src="/gardner">
+        </div>
       </div>
     </div>
-  </footer>
-  <script src="main.js"></script>
-  <script src="order.js"></script>
+    <div class="services">
+      <h3>Services:</h3>
+      <div class="service">
+        <h5>Garden Design:</h5>
+        <p>We provide custom garden design services to create a beautiful outdoor living space that fits your unique style and needs.</p>
+      </div>
+      <div class="service">
+        <h5>Lawn Care:</h5>
+        <p>Our lawn care services include mowing, trimming, fertilization, and weed control to keep your lawn healthy and green.</p>
+      </div>
+      <div class="service">
+        <h5>Landscape Installation:</h5>
+        <p>We offer landscape installation services for both residential and commercial properties, including plant installation, hardscape installation, and outdoor lighting.</p>
+      </div>
+      <div class="service">
+        <h5>Irrigation System Installation and Maintenance:</h5>
+        <p>We design and install efficient irrigation systems to keep your landscape looking beautiful all year round. We also provide maintenance services to ensure that your irrigation system is working properly.</p>
+      </div>
+      <div class="service">
+        <h5>Tree and Shrub Care:</h5>
+        <p>Our experts provide tree and shrub pruning, removal, and planting services to keep your landscape healthy and looking beautiful.</p>
+      </div>
+      <div class="service">
+        <h5>Landscape Maintenance:</h5>
+        <p>We provide regular landscape maintenance services to keep your property looking its best. Our services include weed control, fertilization, pruning, and mulching.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Insert logo here</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="order.js"></script>
 </body>
 </html>
