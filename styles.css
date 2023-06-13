@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
     font-family: 'Acumin-Variable';
     src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
   }
@@ -21,11 +21,12 @@
     }
     
   .jumbotron h1 {
+      font-family: 'Montserrat';
       font-size: 4rem;
       font-weight: bold;
       color: rgb(0, 0, 0);
       background-color: rgba(3, 95, 34, 0.6);
-      width: 72%;
+      width: 49%;
       height: 25%;
     }
 
@@ -91,6 +92,7 @@
     }
     
     .card h2 {
+      font-family: 'Montserrat';
       font-size: 2rem;
       font-weight: bold;
     }
@@ -110,6 +112,7 @@
       border-radius: 5px;
       box-shadow: #000;
       padding: 5px;
+      border-color: red;
     }
 
     .service-container {
@@ -165,10 +168,41 @@
       color: white;
     }
 
-    #trees, #soil, #tools {
+    #trees {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stock-item-container {
+      float: left;
+      width: 80%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .input-group-btn {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .input-group-btn .btn-number {
+      margin: 0 5px;
     }
 
     .row {
@@ -176,7 +210,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-      padding: 20px;
+      padding: 20px 0;
     }
 
     .row:nth-child(3n+1) {
@@ -222,5 +256,11 @@
     }
 
     h5 {
+      font-family: 'Montserrat';
+      font-weight: bold;
+    }
+
+    h3 {
+      font-family: 'Montserrat';
       font-weight: bold;
     }
