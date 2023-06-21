@@ -2,17 +2,28 @@
     font-family: 'Acumin-Variable';
     src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
   }
-
-  html {
-      max-width: 1170px;
-      margin: 0 auto;
-    }
     
   body {
-      font-family: 'Acumin-Variable';
-      padding-bottom: 100px;
-      overflow-x: hidden;
-    }
+    font-family: 'Acumin-Variable';
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: rgb(220, 228, 217);
+  }
+
+  html {
+    height: 100%;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
   
   .jumbotron {
       margin-left: 50px;
@@ -25,7 +36,7 @@
     }
 
   .split-left {
-    width: 95%;
+    width: 97%;
     height: 200%;
     margin-left: 75px;
     margin-top: -90px;
@@ -82,6 +93,10 @@
       background: linear-gradient(#292929, #181818);
       color: white;
       height: 65px;
+      width: 63%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 5px;
     }
     
     /* Style the navigation links */
@@ -92,6 +107,12 @@
     .navbar-nav li.active a {
       color: #4CAF50;
     }
+
+    .navbar-inverse {
+      margin-bottom: 0;
+      background-color: #333;
+      border: none;
+    }    
     
     .cart {
       margin-left: 720px;
@@ -142,7 +163,7 @@
       margin-top: 20px; /* Adjust the margin-top value as needed */
       padding: 10px;
       box-sizing: border-box;
-      background-color: #f2f2f2; /* Add your desired background color */
+      background-color: rgb(217, 228, 227); /* Add your desired background color */
       position: relative;
       text-align: center;
       left: 220px; /* Adjust the left value to move the container */
@@ -222,9 +243,13 @@
     }
 
     .container {
-      padding: 15px;
+      min-height: 100%;
+      padding-top: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .card-body {
@@ -316,22 +341,54 @@
     }
 
     .footer {
-      text-align: left;
-      padding-top: 10px;
-      height: 7%;
-      width: 7%;
+      height: 7rem;
       color: #9d9d9d;
       font-size: 2rem;
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background: linear-gradient(#292929, #181818);
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
     }
     
-    .footer-text {
-      position: relative;
-      top: 10px;
-      padding-left: 15px;
+    .footer-image {
+      padding: 10px;
+      height: 70px;
+      width: 70px;
     }
-   
+
+    .footer-text {
+      margin-left: 10px;
+      position: relative;
+      padding-left: 5px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
     .footer-text:hover {
       color: #fff; /* New text color on hover */
       text-decoration: none;
+    }
+
+    footer.navbar-inverse {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Increase the z-index if necessary */
+    }
+
+    footer .container-fluid {
+      padding-left: 15px;
+      padding-right: 15px;
     }
