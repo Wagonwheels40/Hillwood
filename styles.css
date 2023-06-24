@@ -204,7 +204,7 @@
     }
 
     .service {
-      display: flex;
+      padding-top: 5px;
       align-items: center;
       margin-bottom: 20px;
     }
@@ -250,6 +250,15 @@
       margin-bottom: 0;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    .service-container .container-info {
+      min-height: 100%;
+      padding-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-right: 20px;
     }
 
     .card-body {
@@ -320,15 +329,12 @@
     }
 
     h5 {
-      font-family: 'Montserrat';
       margin-bottom: 5px;
       font-size: 18px;
       font-weight: bold;
     }
 
     h3 {
-      margin: 10px 0;
-      font-family: 'Montserrat';
       font-weight: bold;
       margin-bottom: 10px;
       font-size: 24px;
@@ -337,7 +343,6 @@
     p {
       margin: 0;
       font-size: 16px;
-      padding: 5px;
     }
 
     .footer {
