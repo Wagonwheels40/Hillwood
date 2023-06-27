@@ -23,6 +23,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
+    
   }
   
   .jumbotron {
@@ -171,14 +172,12 @@
       border-radius: 5px;
     }
 
-    .service-container {
-      display: flex;
-    }
-
     .wrap {
       float: left;
-      margin: 5px;
+      margin: 10px;
       width: 40%;
+      margin-top: 20px;
+
     }
 
     .image-container {
@@ -198,15 +197,15 @@
       overflow: hidden;
       border-radius: 10px;
     }
-
-    .service-container {
-      padding-left: 20px;
-    }
-
+    
     .service {
       padding-top: 5px;
       align-items: center;
       margin-bottom: 20px;
+    }
+
+    .services {
+      padding: 5px;
     }
 
     .image-container {
@@ -244,7 +243,7 @@
 
     .container {
       min-height: 100%;
-      padding-top: 15px;
+      padding-top: 65px;
       border: 1px solid #ccc;
       border-radius: 5px;
       margin-bottom: 0;
@@ -252,13 +251,15 @@
       padding-right: 0;
     }
 
-    .service-container .container-info {
-      min-height: 100%;
-      padding-top: 5px;
+    #container {
+      min-height: 65vh;
+      width: 115vh;
       border: 1px solid #ccc;
       border-radius: 5px;
-      margin-top: 20px;
-      margin-right: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .card-body {
