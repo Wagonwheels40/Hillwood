@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Woodbridge Fruit Trees</title>
+  <title>Hillwood Terrace Nursery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">  <link rel="stylesheet" href="styles.css">
@@ -12,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper">
   <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -20,7 +22,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -34,18 +35,27 @@
       </div>
     </nav>
 
-  <div class="container">
-    <div class="row" id="trees">
+  <div class="container small-container">
+    <div id="container">
+      <div id="trees" class="rows">
+        <!-- Stock items will be dynamically added here -->
+      </div>
+      <div class="quantity-container">
+        <button id="btn-minus">-</button>
+        <input type="text" id="quantity" value="1">
+        <button id="btn-plus">+</button>
+      </div>
+      <button class="btn-success">Add to Cart</button>
     </div>
   </div>
 
-  <footer class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Woodbridge Fruit Trees</a>
-      </div>
-    </div>
-  </footer>
+  <div class="footer">
+    <img src="logo/logo-1.png" class="footer-image">
+      <span class="footer-text">Hillwood Terrace Nursery</span>
+  </div>
+</div>
+</div>
+
   <script src="main.js"></script>
   <script src="trees.js"></script>
 </body>
