@@ -23,7 +23,6 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    
   }
   
   .jumbotron {
@@ -230,7 +229,7 @@
     #trees {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
+      grid-gap: 0px;
       flex-wrap: wrap;
     }
 
@@ -295,25 +294,19 @@
       margin: 0 auto; /* Center the container horizontally */
     }
 
-    .small-container .quantity-container {
+    .quantity-container {
       display: flex;
       align-items: center;
       margin-top: 10px;
     }
-    
-    .small-container .quantity-container button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      margin-right: 5px; /* Optional spacing between buttons */
-    }
-    
-    .small-container .quantity-container #quantity {
+
+    .quantity-container input {
       width: 50px;
       text-align: center;
+    }
+    
+    .quantity-container button {
+      margin-right: 5px; /* Optional spacing between buttons */
     }
     
     .row {
