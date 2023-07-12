@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
     font-family: 'Acumin-Variable';
     src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
   }
@@ -66,7 +66,6 @@
     width: 100px;
   }
 
-  
   .btn-primary {
     background-color: #4CAF50;
     border-color: #4CAF50;
@@ -176,7 +175,6 @@
       margin: 10px;
       width: 40%;
       margin-top: 20px;
-
     }
 
     .image-container {
@@ -218,8 +216,54 @@
       margin: 0 auto;
     }
 
-    .input-group {
-      width: 120px;
+    .quantity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .quantity__minus,
+    .quantity__plus {
+      display: block;
+      width: 22px;
+      height: 23px;
+      margin: 0;
+      background: #dee0ee;
+      text-decoration: none;
+      text-align: center;
+      line-height: 23px;
+    }
+    .quantity__minus:hover,
+    .quantity__plus:hover {
+      background: #575b71;
+      color: #fff;
+    } 
+    .quantity__minus {
+      border-radius: 3px 0 0 3px;
+    }
+    .quantity__plus {
+      border-radius: 0 3px 3px 0;
+    }
+    .quantity__input {
+      width: 32px;
+      height: 23px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      border-top: 2px solid #dee0ee;
+      border-bottom: 2px solid #dee0ee;
+      border-left: 1px solid #dee0ee;
+      border-right: 2px solid #dee0ee;
+      background: #fff;
+      color: #8184a1;
+    }
+    .quantity__minus:link,
+    .quantity__plus:link {
+      color: #8184a1;
+    } 
+    .quantity__minus:visited,
+    .quantity__plus:visited {
+      color: #fff;
     }
 
     .fa-duotone fa-cart-shopping {
@@ -238,6 +282,10 @@
       width: 80%;
       padding: 10px;
       box-sizing: border-box;
+    }
+
+    .quantity {
+      display: inline-flex;
     }
 
     .container {
@@ -267,16 +315,11 @@
       align-items: center;
       text-align: center;
     }
-
-    .input-group-btn {
-      display: flex;
-      align-items: center;
+    
+    .add-to-cart-button {
       margin-top: 10px;
     }
-
-    .input-group-btn .btn-number {
-      margin: 0 5px;
-    }
+    
 
     .small-container {
       max-width: 800px;
@@ -287,34 +330,6 @@
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
-    }
-
-    .container small-container {
-      max-width: 20px; /* Adjust the desired width here */
-      margin: 0 auto; /* Center the container horizontally */
-    }
-
-    .quantity-container {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .quantity-container input {
-      width: 50px;
-      text-align: center;
-    }
-    
-    .quantity-container button {
-      margin-right: 5px; /* Optional spacing between buttons */
-    }
-    
-    .row {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-      padding: 20px 0;
     }
 
     .row:nth-child(3n+1) {
