@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: 'Acumin-Variable';
     src: url('Acumin-Variable-Concept.ttf/Acumin\ Variable\ Concept.ttf') format('truetype');
   }
@@ -26,11 +26,12 @@
   }
   
   .jumbotron {
-      margin-left: 50px;
+      top: 20px;
+      margin-left: 100px;
       position: relative;
       overflow: hidden;
       height: 175px;
-      width: 90%;
+      width: 80%;
       background: linear-gradient(to bottom right, #292929, #3f3f3f, #181818);
       background-position: top left;
     }
@@ -38,7 +39,15 @@
   .split-left {
     width: 97%;
     height: 200%;
-    margin-left: 75px;
+    margin-left: 95px;
+    margin-top: -90px;
+    background-size: contain;
+  }
+
+  .split-right {
+    width: 7%;
+    height: 100%;
+    margin-right: 60px;
     margin-top: -90px;
     background-size: contain;
   }
@@ -62,13 +71,15 @@
   }
   
   .container-logo {
-    height: 130px;
+    height: 120px;
     width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
   }
 
   .btn-primary {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
+    background-color: #79cc7c;
+    border-color: #67cf6b;
     margin-top: 5px;
     position: relative;
     z-index: 2;
@@ -112,6 +123,14 @@
       background-color: #333;
       border: none;
     }    
+
+    #cart-count {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 50%;
+    }
     
     .cart {
       margin-left: 720px;
@@ -228,15 +247,24 @@
       width: 22px;
       height: 23px;
       margin: 0;
-      background: #dee0ee;
+      background: #79cc7c;
+      border-color: #67cf6b;
       text-decoration: none;
       text-align: center;
       line-height: 23px;
     }
+  
+  .btn-primary:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+  }
+
     .quantity__minus:hover,
     .quantity__plus:hover {
-      background: #575b71;
+      background-color: #3e8e41;
+      border-color: #3e8e41;
       color: #fff;
+      text-decoration: none;
     } 
     .quantity__minus {
       border-radius: 3px 0 0 3px;
@@ -250,10 +278,10 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      border-top: 2px solid #dee0ee;
-      border-bottom: 2px solid #dee0ee;
-      border-left: 1px solid #dee0ee;
-      border-right: 2px solid #dee0ee;
+      border-top: 2px solid #79cc7c;
+      border-bottom: 2px solid #79cc7c;
+      border-left: 1px solid #79cc7c;
+      border-right: 2px solid #79cc7c;
       background: #fff;
       color: #8184a1;
     }
@@ -288,6 +316,22 @@
       display: inline-flex;
     }
 
+    .contact-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -80%);
+      bottom: 50px;
+      width: 650px;
+      height: 450px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-container input {
+      width: 100%;
+    }
+
     .container {
       min-height: 100%;
       padding-top: 65px;
@@ -307,6 +351,7 @@
       padding-right: 0;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 20px;
     }
 
     .card-body {
@@ -399,11 +444,12 @@
       justify-content: flex-start;
       align-items: center;
       background: linear-gradient(#292929, #181818);
-      border-radius: 5px;
-      position: absolute;
+      position: fixed;
       bottom: 0;
+      left: 0;
       width: 100%;
       margin: 0;
+      z-index: 1000;
     }
     
     .footer-image {
