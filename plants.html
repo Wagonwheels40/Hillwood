@@ -29,25 +29,19 @@
             <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
             <li><a href="plants.html" onclick="this.classList.add('active')">Order</a></li>
             <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
-            <li><a href="checkout.html" onclick="this.classList.add('active')" class="cart"><img src="cart-1.png" class="cart-logo"></a></li>
+            <li><a href="checkout.html" onclick="this.classList.add('active')" class="cart"><img src="cart-1.png" class="cart-logo">
+              <span id="cart-count"></span>
+            </a></li>
           </li>
         </ul>
       </div>
     </nav>
 
-  <div class="container small-container">
     <div id="container">
       <div id="trees" class="rows">
         <!-- Stock items will be dynamically added here -->
       </div>
-      <div class="quantity-container">
-        <button id="btn-minus">-</button>
-        <input type="text" id="quantity" value="1">
-        <button id="btn-plus">+</button>
-      </div>
-      <button class="btn-success">Add to Cart</button>
     </div>
-  </div>
 
   <div class="footer">
     <img src="logo/logo-1.png" class="footer-image">
@@ -58,5 +52,13 @@
 
   <script src="main.js"></script>
   <script src="trees.js"></script>
+  <script>
+$(document).ready(function() {
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const cartItemCount = $('#cart-count');
+  cartItemCount.text(cartItems.length);
+});
+
+  </script>
 </body>
 </html>
