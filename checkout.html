@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Woodbridge Fruit Trees</title>
+  <title>Hillwood Terrace Nursery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">  <link rel="stylesheet" href="styles.css">
@@ -12,56 +13,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Hillwood Cottage Heritage</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
-            <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
-            <li><a href="plants.html" onclick="this.classList.add('active')">Order</a></li>
-            <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
-            <li><a href="checkout.html" onclick="this.classList.add('active')" class="cart"><img src="cart-1.png" class="cart-logo"></a></li>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+  <div class="wrapper">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html" onclick="this.classList.add('active')">Home</a></li>
+              <li><a href="services.html" onclick="this.classList.add('active')">Services</a></li>
+              <li><a href="plants.html" onclick="this.classList.add('active')">Order</a></li>
+              <li><a href="contact.html" onclick="this.classList.add('active')">Contact Us</a></li>
+              <li><a href="checkout.html" onclick="this.classList.add('active')" class="cart"><img src="cart-1.png" class="cart-logo"></a></li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div id="container">
+      <div class="checkout-items">
+        <h2>Pay in store</h2>
+        <p>Click the button below to pay in store with cash or card:</p>
+            <div class="order-summary">
+            </div>
+          <div class="buttons-container">
+            <button type="button" class="btn btn-primary">Add to Order</button>
+            <button type="submit" class="btn btn-primary">Place Order</button>
           </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" rows="5" id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
-    </div>
   </div>
-  <footer class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Woodbridge Fruit Trees</a>
+
+        <div class="footer">
+          <img src="logo/logo-1.png" class="footer-image">
+            <span class="footer-text">Hillwood Terrace Nursery</span>
+        </div>
       </div>
     </div>
-  </footer>
+
+  <script src="main.js"></script>
+  <script src="trees.js"></script>
+  <script src="checkout.js"></script>
+  <script src="payment.js"></script>
+  <script src="dropdown.js"></script>
 </body>
 </html>
