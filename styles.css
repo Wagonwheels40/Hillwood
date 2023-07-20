@@ -332,6 +332,24 @@
       width: 100%;
     }
 
+    .checkout-items {
+      padding: 10px;
+    }
+
+    .checkout-items button {
+      margin-top: 10px;
+    }
+
+    .order-summary {
+      background-color: rgb(231, 231, 231);
+      width: 1000px;
+      height: 600px;
+    }
+
+    .buttons-container {
+      margin-top: 10px;
+    }
+
     .container {
       min-height: 100%;
       padding-top: 65px;
