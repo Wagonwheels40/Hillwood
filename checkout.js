@@ -1,18 +1,30 @@
-const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-const checkoutItemsContainer = document.getElementById("checkout-items");
-
-// Generate HTML for each item in the cart
-function generateCheckoutItemHTML(item) {
-  return `
-    <div class="checkout-item">
-      <p>Item: ${item.name}</p>
-      <p>Price: $${item.price}</p>
-    </div>
-  `;
+function parseQueryString() {
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+  return params.get('cartItems');
 }
 
-// Loop through cart items and generate HTML for each item in the checkout page
-for (let item of cartItems) {
-  const checkoutItemHTML = generateCheckoutItemHTML(item);
-  checkoutItemsContainer.insertAdjacentHTML("beforeend", checkoutItemHTML);
+function updateDisplayedCartItems(cartItemsData) {
+  if (cartItemsData) {
+    const cartItems = JSON.parse(decodeURIComponent(cartItemsData));
+    const orderItemsElement = document.querySelector('.order-items');
+
+    let orderItemsHTML = '';
+    let totalAmount = 0;
+
+    cartItems.forEach((item) => {
+      orderItemsHTML += `${item.name} - $${item.price}<br>`;
+      totalAmount += item.price;
+    });
+
+    orderItemsHTML += `Total Amount: $${totalAmount}`;
+    orderItemsElement.innerHTML = orderItemsHTML;
+  }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cartItemsData = parseQueryString();
+  if (cartItemsData) {
+    updateDisplayedCartItems(cartItemsData);
+  }
+});
