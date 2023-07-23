@@ -346,6 +346,11 @@
       height: 600px;
     }
 
+    .order-items {
+      display: block;
+      gap: 10px;
+    }
+
     .buttons-container {
       margin-top: 10px;
     }
@@ -468,31 +473,25 @@
       width: 100%;
       margin: 0;
       z-index: 1000;
-    }
-    
-    .footer-image {
-      padding: 10px;
-      height: 70px;
-      width: 70px;
+      padding:15px;
     }
 
-    .footer-text {
-      margin-left: 10px;
-      position: relative;
-      padding-left: 5px;
+    .footer-icons {
+      display: flex;
+      margin-left: 95%;
     }
 
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
+    i {
+      font-size: 20px;
+      padding: 5px;
+      color: rgb(156, 154, 154);
+      box-shadow: inset;
+      cursor: pointer
     }
 
-    .footer-text:hover {
-      color: #fff; /* New text color on hover */
-      text-decoration: none;
+    i:hover {
+      color: rgb(80, 54, 54);
+      box-shadow: inset;
     }
 
     footer.navbar-inverse {
